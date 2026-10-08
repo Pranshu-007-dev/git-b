@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Saakshi 🎀</title>
+
+<style>
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+:root{
+    --pink:#ff4f9a;
+    --pink2:#ff8fc4;
+    --purple:#9b5cff;
+    --dark:#180b20;
+    --glass:rgba(255,255,255,.13);
+    --border:rgba(255,255,255,.22);
+}
+
+body{
+    font-family:Arial,Helvetica,sans-serif;
+    color:white;
+    min-height:100vh;
+    overflow-x:hidden;
+    background:
+        radial-gradient(circle at 10% 10%,rgba(255,120,190,.28),transparent 30%),
+        radial-gradient(circle at 90% 20%,rgba(155,92,255,.25),transparent 30%),
+        linear-gradient(135deg,#17091f,#32102f,#140b24);
+}
+
+body:before{
+    content:"";
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    background:
+        radial-gradient(circle at 30% 80%,rgba(255,80,160,.15),transparent 25%),
+        radial-gradient(circle at 80% 80%,rgba(150,80,255,.15),transparent 25%);
+    z-index:-2;
+}
+
+.container{
+    width:min(1050px,92%);
+    margin:auto;
+}
+
+header{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    position:relative;
+    padding:80px 0 40px;
+}
+
+.hero{
+    max-width:850px;
+}
+
+.badge{
+    display:inline-block;
+    padding:9px 17px;
+    border:1px solid var(--border);
+    border-radius:999px;
+    background:var(--glass);
+    backdrop-filter:blur(12px);
+    margin-bottom:20px;
+    font-size:14px;
+}
+
+h1{
+    font-size:clamp(48px,9vw,100px);
+    line-height:.95;
+    margin-bottom:25px;
+    background:linear-gradient(90deg,#fff,#ff9dcc,#d8b4ff,#fff);
+    -webkit-background-clip:text;
+    color:transparent;
+    animation:shine 5s linear infinite;
+    background-size:300%;
+}
+
+@keyframes shine{
+    0%{background-position:0%}
+    100%{background-position:300%}
+}
+
+.hero p{
+    font-size:clamp(17px,3vw,23px);
+    opacity:.9;
+    line-height:1.6;
+}
+
+.card{
+    background:var(--glass);
+    border:1px solid var(--border);
+    border-radius:28px;
+    padding:30px;
+    margin:28px 0;
+    backdrop-filter:blur(18px);
+    box-shadow:0 20px 60px rgba(0,0,0,.2);
+}
+
+.card h2{
+    font-size:30px;
+    margin-bottom:15px;
+}
+
+.card p{
+    line-height:1.8;
+    color:rgba(255,255,255,.9);
+}
+
+.letter{
+    white-space:pre-line;
+    font-size:17px;
+}
+
+.date{
+    margin-top:20px;
+    display:inline-block;
+    padding:12px 18px;
+    border-radius:15px;
+    background:rgba(255,255,255,.1);
+}
+
+.countdown{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:12px;
+    margin-top:20px;
+}
+
+.timebox{
+    padding:18px 10px;
+    border-radius:18px;
+    background:rgba(0,0,0,.2);
+    text-align:center;
+}
+
+.timebox strong{
+    display:block;
+    font-size:34px;
+}
+
+.timebox span{
+    font-size:12px;
+    opacity:.7;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:15px;
+    margin-top:20px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:20px;
+    border:1px solid rgba(255,255,255,.2);
+    transition:.3s;
+}
+
+.gallery img:hover{
+    transform:scale(1.03) rotate(1deg);
+}
+
+button{
+    border:none;
+    cursor:pointer;
+    color:white;
+    padding:14px 22px;
+    border-radius:999px;
+    font-weight:bold;
+    font-size:15px;
+    background:linear-gradient(135deg,var(--pink),var(--purple));
+    box-shadow:0 10px 30px rgba(255,70,150,.25);
+    transition:.25s;
+}
+
+button:hover{
+    transform:translateY(-2px) scale(1.02);
+}
+
+button.secondary{
+    background:rgba(255,255,255,.12);
+    box-shadow:none;
+}
+
+.proposal{
+    text-align:center;
+}
+
+.buttons{
+    min-height:130px;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+}
+
+#noBtn{
+    position:relative;
+}
+
+.love-meter{
+    margin:25px auto 0;
+    max-width:500px;
+    height:15px;
+    background:rgba(255,255,255,.12);
+    border-radius:999px;
+    overflow:hidden;
+}
+
+.love-fill{
+    width:35%;
+    height:100%;
+    background:linear-gradient(90deg,#ff4f9a,#ffb6dd);
+    transition:.4s;
+}
+
+video{
+    width:100%;
+    max-height:550px;
+    border-radius:20px;
+    margin-top:15px;
+    background:#000;
+}
+
+audio{
+    width:100%;
+    margin-top:15px;
+}
+
+footer{
+    text-align:center;
+    padding:50px 20px 70px;
+    opacity:.7;
+}
+
+#hearts{
+    position:fixed;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:-1;
+}
+
+.heart{
+    position:absolute;
+    bottom:-40px;
+    animation:floatUp linear forwards;
+    opacity:.7;
+}
+
+@keyframes floatUp{
+    from{
+        transform:translateY(0) rotate(0deg);
+        opacity:0;
+    }
+    10%{opacity:.8}
+    to{
+        transform:translateY(-115vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+/* SETTINGS */
+
+.settings-button{
+    position:fixed;
+    top:18px;
+    right:18px;
+    z-index:1000;
+    width:52px;
+    height:52px;
+    border-radius:50%;
+    padding:0;
+    font-size:21px;
+}
+
+.modal{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.7);
+    backdrop-filter:blur(10px);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:20px;
+    z-index:2000;
+}
+
+.modal.show{
+    display:flex;
+}
+
+.modal-box{
+    width:min(700px,100%);
+    max-height:90vh;
+    overflow-y:auto;
+    background:#24132d;
+    border:1px solid rgba(255,255,255,.2);
+    border-radius:28px;
+    padding:28px;
+    box-shadow:0 30px 100px rgba(0,0,0,.5);
+}
+
+.modal-box h2{
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin:15px 0 7px;
+    font-weight:bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea{
+    width:100%;
+    padding:14px;
+    border-radius:14px;
+    border:1px solid rgba(255,255,255,.18);
+    background:rgba(255,255,255,.08);
+    color:white;
+    outline:none;
+}
+
+textarea{
+    min-height:180px;
+    resize:vertical;
+}
+
+input[type="file"]{
+    width:100%;
+    padding:12px;
+    background:rgba(255,255,255,.07);
+    border-radius:14px;
+    color:white;
+}
+
+.setting-row{
+    margin:20px 0;
+    padding:18px;
+    border-radius:18px;
+    background:rgba(255,255,255,.06);
+}
+
+.modal-actions{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+    margin-top:20px;
+}
+
+.status{
+    margin-top:15px;
+    padding:12px;
+    border-radius:12px;
+    background:rgba(255,255,255,.07);
+    font-size:14px;
+}
+
+.hidden{
+    display:none!important;
+}
+
+.login-note{
+    opacity:.75;
+    font-size:13px;
+    line-height:1.5;
+    margin-top:10px;
+}
+
+@media(max-width:600px){
+    .countdown{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .card{
+        padding:22px;
+        border-radius:22px;
+    }
+
+    .buttons{
+        min-height:170px;
+    }
+
+    .modal-box{
+        padding:20px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div id="hearts"></div>
+
+<button class="settings-button" onclick="openSettings()" title="Settings">⚙️</button>
+
+<header>
+<div class="hero container">
+
+<div class="badge">For my favorite person 🎀</div>
+
+<h1>Happy Birthday,<br>Saakshi 🎀</h1>
+
+<p>
+To my beautiful Cartoon, my bbg, my favorite person —
+today is all about you. ❤️
+</p>
+
+<div class="date">
+💗 Our special date: <b>24 November 2025</b>
+</div>
+
+</div>
+</header>
+
+
+<main class="container">
+
+<section class="card">
+<h2>💌 A Letter For You</h2>
+
+<p id="message" class="letter"></p>
+</section>
+
+
+<section class="card">
+<h2>🎂 Your Birthday Countdown</h2>
+
+<p>Counting down to another beautiful 24th. ❤️</p>
+
+<div class="countdown">
+<div class="timebox">
+<strong id="days">0</strong>
+<span>DAYS</span>
+</div>
+
+<div class="timebox">
+<strong id="hours">0</strong>
+<span>HOURS</span>
+</div>
+
+<div class="timebox">
+<strong id="minutes">0</strong>
+<span>MINUTES</span>
+</div>
+
+<div class="timebox">
+<strong id="seconds">0</strong>
+<span>SECONDS</span>
+</div>
+</div>
+</section>
+
+
+<section class="card">
+<h2>📸 Our Little Memories</h2>
+
+<div id="gallery" class="gallery">
+<!-- Photos appear here -->
+</div>
+
+<p id="noPhotos" style="opacity:.65;margin-top:15px;">
+Your memories will appear here ❤️
+</p>
+</section>
+
+
+<section class="card">
+<h2>🎵 A Little Something For You</h2>
+
+<p id="musicText">A song for my Cartoon 🎀</p>
+
+<audio id="musicPlayer" controls class="hidden"></audio>
+
+<video id="videoPlayer" controls playsinline class="hidden"></video>
+</section>
+
+
+<section class="card proposal">
+
+<h2>💗 One Little Question...</h2>
+
+<p style="margin-bottom:15px;">
+Will you keep being my favorite person for all the days ahead?
+</p>
+
+<div class="buttons">
+
+<button id="yesBtn" onclick="sayYes()">YES 💕</button>
+
+<button id="noBtn" onclick="runAway()">NO 😭</button>
+
+</div>
+
+<div class="love-meter">
+<div id="loveFill" class="love-fill"></div>
+</div>
+
+<p id="proposalMessage" style="margin-top:15px;">
+Choose carefully, Cartoon 😂🎀
+</p>
+
+</section>
+
+
+<section class="card" style="text-align:center">
+
+<h2>✨ Make A Wish</h2>
+
+<p>
+Close your eyes, make a wish and press the button. ❤️
+</p>
+
+<button onclick="makeWish()" style="margin-top:20px;">
+Make My Wish ✨
+</button>
+
+</section>
+
+</main>
+
+
+<footer>
+Made with way too much love by shybaby ❤️<br>
+For Cartoon 🎀
+</footer>
+
+
+<!-- SETTINGS MODAL -->
+
+<div id="settingsModal" class="modal">
+
+<div class="modal-box">
+
+<div id="loginPanel">
+
+<h2>🔐 Private Settings</h2>
+
+<p>
+Only the website owner should use this area.
+</p>
+
+<label>Email</label>
+<input id="loginEmail" type="email" placeholder="Your Firebase account email">
+
+<label>Password</label>
+<input id="loginPassword" type="password" placeholder="Your Firebase password">
+
+<div class="modal-actions">
+<button onclick="loginAdmin()">Login</button>
+<button class="secondary" onclick="closeSettings()">Close</button>
+</div>
+
+<p class="login-note">
+Create this email/password account in Firebase Authentication.
+It is separate from your GitHub account.
+</p>
+
+<div id="loginStatus" class="status"></div>
+
+</div>
+
+
+<div id="editorPanel" class="hidden">
+
+<h2>⚙️ Website Settings</h2>
+
+<div class="setting-row">
+
+<label>Her name</label>
+<input id="editName" type="text" placeholder="Saakshi">
+
+<label>Birthday message</label>
+<textarea id="editMessage"></textarea>
+
+</div>
+
+
+<div class="setting-row">
+
+<h3>📸 Photos</h3>
+
+<p style="opacity:.7;margin:8px 0 15px;">
+Select the photos you want everyone to see.
+</p>
+
+<input id="photoUpload" type="file" accept="image/*" multiple>
+
+</div>
+
+
+<div class="setting-row">
+
+<h3>🎵 Music</h3>
+
+<p style="opacity:.7;margin:8px 0 15px;">
+Select an MP3/audio file.
+</p>
+
+<input id="musicUpload" type="file" accept="audio/*">
+
+</div>
+
+
+<div class="setting-row">
+
+<h3>🎥 Video / Screen Recording</h3>
+
+<p style="opacity:.7;margin:8px 0 15px;">
+Optional. Use this if your "song" is actually a screen recording.
+</p>
+
+<input id="videoUpload" type="file" accept="video/*">
+
+</div>
+
+
+<div class="modal-actions">
+
+<button onclick="saveWebsite()">💾 Save Everything</button>
+
+<button class="secondary" onclick="logoutAdmin()">Logout</button>
+
+<button class="secondary" onclick="closeSettings()">Close</button>
+
+</div>
+
+<div id="saveStatus" class="status"></div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<!-- FIREBASE -->
+<script type="module">
+
+/*
+===========================================================
+🔥 FIREBASE CONFIG
+===========================================================
+
+REPLACE THESE VALUES WITH YOUR FIREBASE WEB APP CONFIG.
+
+Firebase Console:
+Project Settings
+→ Your apps
+→ Web app
+→ Config
+
+===========================================================
+*/
+
+const firebaseConfig = {
+
+    apiKey: "PASTE_YOUR_API_KEY_HERE",
+
+    authDomain: "PASTE_YOUR_PROJECT.firebaseapp.com",
+
+    databaseURL: "https://PASTE_YOUR_DATABASE_URL_HERE",
+
+    projectId: "PASTE_YOUR_PROJECT_ID",
+
+    storageBucket: "PASTE_YOUR_STORAGE_BUCKET_HERE",
+
+    messagingSenderId: "PASTE_YOUR_SENDER_ID_HERE",
+
+    appId: "PASTE_YOUR_APP_ID_HERE"
+};
+
+
+/* Firebase SDK */
+
+import {
+    initializeApp
+} from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
+
+import {
+    getAuth,
+    signInWithEmailAndPassword,
+    signOut,
+    onAuthStateChanged
+} from "https://www.gstatic.com/firebasejs/12.19.0/firebase-auth.js";
+
+import {
+    getDatabase,
+    ref,
+    get,
+    set
+} from "https://www.gstatic.com/firebasejs/12.19.0/firebase-database.js";
+
+import {
+    getStorage,
+    ref as storageRef,
+    uploadBytes,
+    getDownloadURL
+} from "https://www.gstatic.com/firebasejs/12.19.0/firebase-storage.js";
+
+
+const app = initializeApp(firebaseConfig);
+
+const auth = getAuth(app);
+
+const db = getDatabase(app);
+
+const storage = getStorage(app);
+
+
+/* Default content */
+
+const DEFAULT_MESSAGE = `My dearest Saakshi, my Cartoon 🎀,
+
+Happy Birthday to the person who somehow became one of the most special parts of my life.
+
+It still feels a little crazy when I think about how we met. Out of all the people, all the conversations and all the random moments on Instagram, somehow I found you in my anime GC, aniverse.
+
+And somehow, that random beginning became us.
+
+More than ten months later, here we are.
+
+You became my girlfriend on the 24th of November 2025, and ever since then, the 24th has had a completely different meaning for me.
+
+I don't know if I will ever be able to properly explain what I love about you because honestly, there are too many things.
+
+I love your innocence.
+
+I love your cuteness.
+
+I love your hair.
+
+I love your smile.
+
+I love your laugh.
+
+I love the way you speak.
+
+I love all the tiny things you probably don't even notice about yourself.
+
+And somehow, I love almost everything about you.
+
+You became my Cartoon 🎀.
+
+My bbg 🎀.
+
+And somehow I became your shybaby.
+
+I still smile when I think about all our funny moments, our silly conversations, the random things we say, the little arguments, the teasing, the cute moments and all those memories that only make sense to us.
+
+Those moments may look small to everyone else.
+
+But to me, they're everything.
+
+Because they're pieces of us.
+
+And if I could make one promise to you today, it would be this:
+
+I want to keep choosing you.
+
+I want to keep being there for you.
+
+On the days when you're happy.
+
+On the days when you're annoyed.
+
+On the days when you're tired.
+
+On the days when everything feels perfect.
+
+And even on the days when nothing does.
+
+I can't promise that every day will be perfect.
+
+But I can promise that I will always try to make you feel loved, appreciated and never alone.
+
+Thank you for becoming such a beautiful part of my life.
+
+Thank you for every smile.
+
+Every laugh.
+
+Every silly conversation.
+
+Every cute moment.
+
+Every memory.
+
+And thank you for simply being you.
+
+So today, I hope you smile a little more.
+
+I hope you feel a little more loved.
+
+And I hope you know that somewhere in this huge world, there is a shybaby who is incredibly lucky to call you his Cartoon.
+
+Happy Birthday, Saakshi. 🎀
+
+I love you.
+
+And now...
+
+I have one tiny question for you.
+
+Will you keep being my favorite person for all the days ahead? ❤️`;
+
+
+/* Load saved website */
+
+async function loadWebsite(){
+
+    try{
+
+        const snapshot = await get(ref(db,"birthdayWebsite"));
+
+        if(snapshot.exists()){
+
+            const data = snapshot.val();
+
+            applyWebsite(data);
+
+        }else{
+
+            applyWebsite({
+
+                name:"Saakshi",
+
+                message:DEFAULT_MESSAGE,
+
+                photos:[],
+
+                music:"",
+
+                video:""
+
+            });
+
+        }
+
+    }catch(error){
+
+        console.error(error);
+
+        applyWebsite({
+
+            name:"Saakshi",
+
+            message:DEFAULT_MESSAGE,
+
+            photos:[],
+
+            music:"",
+            video:""
+
+        });
+
+    }
+
+}
+
+
+/* Apply website data */
+
+function applyWebsite(data){
+
+    const name = data.name || "Saakshi";
+
+    document.title = `Happy Birthday ${name} 🎀`;
+
+    document.querySelector("h1").innerHTML =
+        `Happy Birthday,<br>${escapeHTML(name)} 🎀`;
+
+    document.getElementById("message").textContent =
+        data.message || DEFAULT_MESSAGE;
+
+
+    const gallery =
+        document.getElementById("gallery");
+
+    gallery.innerHTML="";
+
+
+    const photos = data.photos || [];
+
+    if(photos.length){
+
+        document.getElementById("noPhotos")
+            .classList.add("hidden");
+
+        photos.forEach(url=>{
+
+            const img=document.createElement("img");
+
+            img.src=url;
+
+            img.loading="lazy";
+
+            gallery.appendChild(img);
+
+        });
+
+    }else{
+
+        document.getElementById("noPhotos")
+            .classList.remove("hidden");
+
+    }
+
+
+    const music =
+        document.getElementById("musicPlayer");
+
+    const video =
+        document.getElementById("videoPlayer");
+
+
+    music.pause();
+
+    video.pause();
+
+    music.classList.add("hidden");
+
+    video.classList.add("hidden");
+
+
+    if(data.music){
+
+        music.src=data.music;
+
+        music.classList.remove("hidden");
+
+        document.getElementById("musicText")
+            .textContent="🎵 A little song for my Cartoon 🎀";
+
+    }else if(data.video){
+
+        video.src=data.video;
+
+        video.classList.remove("hidden");
+
+        document.getElementById("musicText")
+            .textContent="🎥 A little something for my Cartoon 🎀";
+
+    }else{
+
+        document.getElementById("musicText")
+            .textContent="A song for my Cartoon 🎀";
+
+    }
+
+}
+
+
+/* Firebase login */
+
+window.loginAdmin = async function(){
+
+    const email =
+        document.getElementById("loginEmail").value.trim();
+
+    const password =
+        document.getElementById("loginPassword").value;
+
+    const status =
+        document.getElementById("loginStatus");
+
+    status.textContent="Logging in...";
+
+    try{
+
+        await signInWithEmailAndPassword(
+            auth,
+            email,
+            password
+        );
+
+        status.textContent="Logged in ❤️";
+
+    }catch(error){
+
+        console.error(error);
+
+        status.textContent =
+            "Login failed. Check your email/password and Firebase setup.";
+
+    }
+
+};
+
+
+/* Auth state */
+
+onAuthStateChanged(auth,user=>{
+
+    if(user){
+
+        document
+            .getElementById("loginPanel")
+            .classList.add("hidden");
+
+        document
+            .getElementById("editorPanel")
+            .classList.remove("hidden");
+
+        loadEditorValues();
+
+    }else{
+
+        document
+            .getElementById("loginPanel")
+            .classList.remove("hidden");
+
+        document
+            .getElementById("editorPanel")
+            .classList.add("hidden");
+
+    }
+
+});
+
+
+/* Open settings */
+
+window.openSettings=function(){
+
+    document
+        .getElementById("settingsModal")
+        .classList.add("show");
+
+};
+
+
+/* Close settings */
+
+window.closeSettings=function(){
+
+    document
+        .getElementById("settingsModal")
+        .classList.remove("show");
+
+};
+
+
+/* Load current values into editor */
+
+async function loadEditorValues(){
+
+    try{
+
+        const snapshot =
+            await get(ref(db,"birthdayWebsite"));
+
+        const data =
+            snapshot.exists()
+            ? snapshot.val()
+            : {
+                name:"Saakshi",
+                message:DEFAULT_MESSAGE
+            };
+
+        document.getElementById("editName").value =
+            data.name || "Saakshi";
+
+        document.getElementById("editMessage").value =
+            data.message || DEFAULT_MESSAGE;
+
+    }catch(error){
+
+        console.error(error);
+
+    }
+
+}
+
+
+/* Upload one file */
+
+async function uploadFile(file,path){
+
+    const fileRef =
+        storageRef(storage,path);
+
+    await uploadBytes(fileRef,file);
+
+    return await getDownloadURL(fileRef);
+
+}
+
+
+/* Save everything */
+
+window.saveWebsite=async function(){
+
+    const user=auth.currentUser;
+
+    if(!user){
+
+        alert("Please login first.");
+
+        return;
+
+    }
+
+
+    const status =
+        document.getElementById("saveStatus");
+
+    status.textContent="Saving... please wait ❤️";
+
+
+    try{
+
+        const oldSnapshot =
+            await get(ref(db,"birthdayWebsite"));
+
+        const oldData =
+            oldSnapshot.exists()
+            ? oldSnapshot.val()
+            : {
+                name:"Saakshi",
+                message:DEFAULT_MESSAGE,
+                photos:[],
+                music:"",
+                video:""
+            };
+
+
+        const data={
+
+            name:
+                document.getElementById("editName")
+                .value.trim() || "Saakshi",
+
+            message:
+                document.getElementById("editMessage")
+                .value.trim() || DEFAULT_MESSAGE,
+
+            photos:
+                oldData.photos || [],
+
+            music:
+                oldData.music || "",
+
+            video:
+                oldData.video || ""
+
+        };
+
+
+        /* Photos */
+
+        const photoFiles =
+            document.getElementById("photoUpload").files;
+
+
+        if(photoFiles.length){
+
+            data.photos=[];
+
+            for(let i=0;i<photoFiles.length;i++){
+
+                status.textContent =
+                    `Uploading photo ${i+1} of ${photoFiles.length}...`;
+
+                const url =
+                    await uploadFile(
+                        photoFiles[i],
+                        `birthday/photos/${Date.now()}_${photoFiles[i].name}`
+                    );
+
+                data.photos.push(url);
+
+            }
+
+        }
+
+
+        /* Music */
+
+        const musicFile =
+            document.getElementById("musicUpload").files[0];
+
+
+        if(musicFile){
+
+            status.textContent="Uploading music... 🎵";
+
+            data.music =
+                await uploadFile(
+                    musicFile,
+                    `birthday/music/${Date.now()}_${musicFile.name}`
+                );
+
+        }
+
+
+        /* Video */
+
+        const videoFile =
+            document.getElementById("videoUpload").files[0];
+
+
+        if(videoFile){
+
+            status.textContent="Uploading video... 🎥";
+
+            data.video =
+                await uploadFile(
+                    videoFile,
+                    `birthday/video/${Date.now()}_${videoFile.name}`
+                );
+
+        }
+
+
+        status.textContent="Saving website...";
+
+
+        await set(
+            ref(db,"birthdayWebsite"),
+            data
+        );
+
+
+        applyWebsite(data);
+
+
+        status.textContent =
+            "Saved successfully! Everyone will see the changes. ❤️🎀";
+
+
+    }catch(error){
+
+        console.error(error);
+
+        status.textContent =
+            "Something went wrong: " + error.message;
+
+    }
+
+};
+
+
+/* Logout */
+
+window.logoutAdmin=async function(){
+
+    await signOut(auth);
+
+};
+
+
+/* Escape HTML */
+
+function escapeHTML(text){
+
+    return text
+        .replaceAll("&","&amp;")
+        .replaceAll("<","&lt;")
+        .replaceAll(">","&gt;")
+        .replaceAll('"',"&quot;")
+        .replaceAll("'","&#039;");
+
+}
+
+
+/* Start */
+
+loadWebsite();
+
+</script>
+
+
+<script>
+
+/* FLOATING HEARTS */
+
+const heartContainer =
+    document.getElementById("hearts");
+
+const heartTypes=[
+    "❤️",
+    "💗",
+    "💕",
+    "💖",
+    "💘",
+    "🎀",
+    "✨"
+];
+
+function createHeart(){
+
+    const heart =
+        document.createElement("div");
+
+    heart.className="heart";
+
+    heart.textContent =
+        heartTypes[
+            Math.floor(
+                Math.random()*heartTypes.length
+            )
+        ];
+
+    heart.style.left =
+        Math.random()*100+"%";
+
+    heart.style.fontSize =
+        (14+Math.random()*25)+"px";
+
+    heart.style.animationDuration =
+        (6+Math.random()*8)+"s";
+
+    heartContainer.appendChild(heart);
+
+    setTimeout(()=>{
+        heart.remove();
+    },15000);
+
+}
+
+setInterval(createHeart,450);
+
+
+/* COUNTDOWN */
+
+function updateCountdown(){
+
+    const now=new Date();
+
+    let year=now.getFullYear();
+
+    let target=
+        new Date(year,10,24,0,0,0);
+
+    if(target<=now){
+
+        target=
+            new Date(year+1,10,24,0,0,0);
+
+    }
+
+    const difference =
+        target-now;
+
+    const days =
+        Math.floor(
+            difference/(1000*60*60*24)
+        );
+
+    const hours =
+        Math.floor(
+            difference/(1000*60*60)%24
+        );
+
+    const minutes =
+        Math.floor(
+            difference/(1000*60)%60
+        );
+
+    const seconds =
+        Math.floor(
+            difference/1000%60
+        );
+
+
+    document.getElementById("days").textContent=days;
+
+    document.getElementById("hours").textContent=hours;
+
+    document.getElementById("minutes").textContent=minutes;
+
+    document.getElementById("seconds").textContent=seconds;
+
+}
+
+setInterval(updateCountdown,1000);
+
+updateCountdown();
+
+
+/* PROPOSAL */
+
+let noClicks=0;
+
+const noMessages=[
+    "NO 😭",
+    "Are you sure? 🥺",
+    "Really?? 😭",
+    "Cartoon pls 😭🎀",
+    "Think again 😂",
+    "That's illegal 😭",
+    "Nice try 😭❤️",
+    "You can't escape love 😂",
+    "JUST SAY YES 😭💗"
+];
+
+
+function runAway(){
+
+    noClicks++;
+
+    const btn =
+        document.getElementById("noBtn");
+
+    const message =
+        document.getElementById("proposalMessage");
+
+    const fill =
+        document.getElementById("loveFill");
+
+
+    btn.textContent =
+        noMessages[
+            Math.min(
+                noClicks,
+                noMessages.length-1
+            )
+        ];
+
+
+    const x =
+        (Math.random()-.5)*280;
+
+    const y =
+        (Math.random()-.5)*100;
+
+    btn.style.transform =
+        `translate(${x}px,${y}px)`;
+
+
+    fill.style.width =
+        Math.min(
+            35+noClicks*8,
+            100
+        )+"%";
+
+
+    message.textContent =
+        "Your NO is making the love meter stronger 😂❤️";
+
+}
+
+
+function sayYes(){
+
+    document.getElementById("noBtn")
+        .style.display="none";
+
+    document.getElementById("yesBtn")
+        .textContent="SHE SAID YES!!! 💕😭";
+
+    document.getElementById("proposalMessage")
+        .textContent=
+        "I knew it, Cartoon. ❤️ You are stuck with your shybaby now. 🎀";
+
+
+    document.getElementById("loveFill")
+        .style.width="100%";
+
+
+    for(let i=0;i<80;i++){
+
+        setTimeout(
+            createConfetti,
+            i*20
+        );
+
+    }
+
+}
+
+
+function createConfetti(){
+
+    const piece =
+        document.createElement("div");
+
+    piece.textContent =
+        ["❤️","💗","💕","🎀","✨","💖"]
+        [
+            Math.floor(
+                Math.random()*6
+            )
+        ];
+
+    piece.style.position="fixed";
+
+    piece.style.left =
+        Math.random()*100+"vw";
+
+    piece.style.top="-20px";
+
+    piece.style.fontSize =
+        (15+Math.random()*20)+"px";
+
+    piece.style.zIndex="5000";
+
+    piece.style.transition=
+        "transform 3s linear, opacity 3s";
+
+    document.body.appendChild(piece);
+
+
+    setTimeout(()=>{
+
+        piece.style.transform=
+            `translateY(110vh) rotate(720deg)`;
+
+        piece.style.opacity="0";
+
+    },30);
+
+
+    setTimeout(()=>{
+        piece.remove();
+    },3100);
+
+}
+
+
+/* WISH */
+
+function makeWish(){
+
+    for(let i=0;i<60;i++){
+
+        setTimeout(
+            createConfetti,
+            i*20
+        );
+
+    }
+
+    alert(
+        "✨ Wish made! Now keep smiling, Cartoon 🎀❤️"
+    );
+
+}
+
+</script>
+
+</body>
+</html>
